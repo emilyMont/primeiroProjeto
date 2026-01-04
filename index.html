@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Básico para Iniciantes</title>
+
+    <!-- CSS NO MESMO ARQUIVO -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            margin: 40px;
+            background: green;
+            border-radius: 8px;
+        }
+
+        .slider {
+            width: 100%;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Exemplo de HTML Básico</h1>
+        <p>Para quem está começando 🚀</p>
+    </header>
+
+    <!-- ÂNCORAS -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#slider">Slider</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Início</h2>
+        <p style="color: aqua;">Essa é a seção inicial. As âncoras levam você até cada parte da página.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>HTML é a linguagem usada para criar a estrutura de sites.</p>
+
+        <ul>
+            <li>HTML → estrutura</li>
+            <li>CSS → estilo</li>
+            <li>JavaScript → interatividade</li>
+        </ul>
+    </section>
+
+    <section id="slider">
+        <h2>Exemplo de Slider</h2>
+        <p>Arraste o slider:</p>
+
+        <input type="range" min="0" max="100" value="50" class="slider">
+
+        <p>Esse é um input do tipo <strong>range</strong>.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form>
+            <label>Nome:</label><br>
+            <input type="text"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email"><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 - HTML Básico</p>
+    </footer>
+
+</body>
+</html>
